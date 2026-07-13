@@ -8,9 +8,6 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold text-white">Mon Photharam</h1>
           <div className="flex gap-4">
-            <Link href="/weather" className="text-white hover:text-yellow-300 transition font-semibold">
-              🌤️ Weather
-            </Link>
             <Link href="/ramany-withi" className="text-white hover:text-yellow-300 transition font-semibold">
               🏛️ Ramany Withi
             </Link>
@@ -31,17 +28,11 @@ export default function Home() {
             Case Study: Photharam District, Ratchaburi Province
           </p>
 
-          {/* CTA Buttons */}
+          {/* CTA Button */}
           <div className="flex flex-wrap gap-4 justify-center mb-16">
             <Link
-              href="/weather"
-              className="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-lg transition transform hover:scale-105"
-            >
-              📍 Check Weather
-            </Link>
-            <Link
               href="/ramany-withi"
-              className="bg-white hover:bg-gray-200 text-gray-800 font-bold py-3 px-8 rounded-lg transition transform hover:scale-105"
+              className="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-lg transition transform hover:scale-105"
             >
               🏛️ Explore Ramany Withi
             </Link>
@@ -66,16 +57,17 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Features Section */}
-          <div className="mt-20 grid md:grid-cols-2 gap-6 text-left">
-            <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-6 text-white">
-              <h4 className="text-2xl font-bold mb-4">🌤️ Weather Dashboard</h4>
-              <p className="text-blue-100">Real-time weather information for travel planning and activity recommendations</p>
-            </div>
-            <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-6 text-white">
-              <h4 className="text-2xl font-bold mb-4">🏛️ Ramany Withi</h4>
-              <p className="text-blue-100">Interactive cultural experience featuring maps, heritage stories, cuisine, wisdom & AR/VR murals</p>
-            </div>
+          {/* Main Feature Section */}
+          <div className="mt-20 bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-8 text-white max-w-2xl">
+            <h4 className="text-3xl font-bold mb-4">🏛️ Ramany Withi</h4>
+            <p className="text-blue-100 mb-6">Interactive cultural experience featuring:</p>
+            <ul className="text-left space-y-3 text-blue-100">
+              <li>✓ Interactive map of cultural sites</li>
+              <li>✓ Mon heritage timeline and history</li>
+              <li>✓ Culinary stories and traditional recipes</li>
+              <li>✓ Local wisdom and agricultural knowledge</li>
+              <li>✓ AR/VR mural experiences</li>
+            </ul>
           </div>
         </div>
       </div>
